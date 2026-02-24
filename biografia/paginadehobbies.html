@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+   
+        body {
+            background-color: black; 
+            color: white;            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        
+        h1 {
+            color: #f0f0f0; 
+            text-align: center; 
+        }
+
+        
+        .conteudo {
+            max-width: 800px;
+            margin: 0 auto; 
+        }
+    </style>
+    <style>
+       
+        body {
+            background-color: #121212; 
+            color: #E0E0E0;           
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+        .navbar {
+            background-color: #333; 
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+       
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+       
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555; 
+        }
+
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+       
+        .dropdown-content a {
+            float: none;
+            color: black; 
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+      
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+      
+        .conteudo {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+ footer {
+            background-color: #000;
+            border-top: 1px solid #444;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        
+        .botao-js {
+            background-color: #131313; 
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .botao-js:hover {
+            transform: scale(1.05);
+            background-color: #ffea00;
+        }
+
+  .jogatina {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/cockpitas.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+.cosplay {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/weball.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+.comida  {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/comida.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+.madeira {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/madeira\ cortada.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+.musica {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/tenaciousd.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <div class="conteudo">
+        <h1>O meus hobbies e passatempos</h1>
+       
+    </div>
+
+
+
+
+
+
+    <div class="navbar">
+        <a href="paginaprincipal.html">Início</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Sobre Mim 
+                <i class="fa fa-caret-down"></i> &#9662; </button>
+            <div class="dropdown-content">
+                <a href="paginaprincipal.html">Quem eu sou</a>
+                <a href="paginadeexperienciaprofissional.html">O que fiz</a>
+                <a href="paginadehobbies.html">O meu tempo livre</a>
+                <a href="associados.html">Associados</a>
+            </div>
+        </div> 
+    </div>
+<h2>Aqui está um pequeno resumo do meu tempo livre</h2>
+<p>No entanto é claro, consoante o tempo posso arranjar novas coisas e largar outras.</p>
+
+
+
+  <div class="jogatina" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Jogar</h2>
+                <p>Geralmente gosto de passar maior parte do meu tempo a jogar. Muitos desses jogos são de simulação ou são um first person shooter</p>
+                <p>Os jogos que mais jogo são o War Thunder, League of Legends, Counter strike 2, Cyberpunk 2077 e battlefield 6</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/set up inc.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+      <div class="madeira" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Fazer trabalhos em madeira</h2>
+                <p>A certo ponto da minha vida cheguei a ter muito tempo livre na minha mão.</p>
+                <p>Isso incluia madrugadas que davam oportunidade ao aborrecimento para enfluenciar nas coisas de madeira que fazia.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/sanita de madeira.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+      <div class="comida" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Comer</h2>
+                <p>Gosto de saborear comida que gosto e de experimentar novos sabores.</p>
+                <p>Não há muito que se lhe diga pois como toda a gente um bom bifinho com arroz ou até mesmo uma sopa das pedras deixa uma pessoa feliz.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/comida.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+      <div class="cosplay" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Cosplay</h2>
+                <p>Gosto de fazer cosplay e de ir ás convenções.</p>
+                <p>Gosto de fazer cosplay pois permite-me experimentar e fazer coisas como por exemplo roupa e permite-me também conhecer pessoas e interagir com pessoas com os mesmos gostos que eu. </p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/pose bizarra.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+<div class="musica" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Ouvir musica</h2>
+                <p>Passo tempo também a ouvir música enquanto faço alguma coisa, muitas das vezes tou a jogar e nos meus headphones por trás está a tocar música. Pessoalmente ouço de tudo.</p>
+                <p>O meu gosto musical é mais inclinado para o rock e o metal no entanto gosto de ouvir também rap, techno e até mesmo classica.</p>
+                <p>Algumas das minhas bandas e cantores favoritos são os Metalica, Ozzy Osbourne, Jack Black, Slash, Sabaton, Eminem, ABBA, Boney M e também Quim Barreiros</p>
+                <a href="https://youtu.be/GNJtPFXUnm4?si=KW1-OWeqWfQLXbqG">Uma das minhas musicas favoritas</a>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/ozzy.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+ <footer id="meu-rodape">
+        </footer>
+
+        <script>
+        
+        const rodape = document.getElementById('meu-rodape');
+
+       
+        const botao = document.createElement('button');
+
+       
+        botao.innerHTML = "botão secreto";
+        
+        
+        botao.className = "botao-js";
+
+        
+        botao.onclick = function() {
+           
+            const novaJanela = window.open("", "_blank");
+           
+            novaJanela.document.write(`
+                <body style="background: black; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial;">
+                    <h1>este botão é executado em javascript</h1>
+                </body>
+            `);
+        };
+
+     
+        rodape.appendChild(botao);
+        </script>
+</body>
+</html>

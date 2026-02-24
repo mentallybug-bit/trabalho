@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Meu Site Oficial</title>
+    <style>
+        /* --- 1. CONFIGURAÇÕES GERAIS --- */
+        body {
+            background-color: #000000; /* Fundo preto */
+            color: white;              /* Letras brancas */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;        /* Linha fundamental para centrar texto */
+        }
+
+        /* --- 2. BARRA DE NAVEGAÇÃO E DROPDOWN --- */
+        .navbar {
+            background-color: #1a1a1a;
+            overflow: visible;
+            display: flex;
+            justify-content: center; /* Centra os itens da barra */
+            border-bottom: 1px solid #333;
+        }
+
+        .navbar a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .navbar a:hover, .dropdown:hover .dropbtn { background-color: #333; }
+
+        /* --- 3. A CAIXA ESPECIAL (TEXTO + IMAGENS) --- */
+        .caixa-especial {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; /* Borda branca */
+            border-radius: 20px;
+            overflow: hidden;
+            
+            /* Imagem de fundo da caixa (Substitui o URL abaixo) */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/curso\ de\ desencarceramento.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; /* Ajusta para telemóveis */
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; /* Texto alinhado à esquerda dentro da caixa para contraste */
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        h1 { margin-top: 40px; }
+
+        footer {
+            background-color: #000;
+            border-top: 1px solid #444;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* Estilo para o botão que o JS vai criar */
+        .botao-js {
+            background-color: #f7df1e; /* Amarelo típico do JavaScript */
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .botao-js:hover {
+            transform: scale(1.05);
+            background-color: #ffea00;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Início</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu &#9662;</button>
+            <div class="dropdown-content">
+                <a href="#quem-sou">Quem eu sou</a>
+                <a href="#o-que-fiz">O que fiz</a>
+                <a href="#tempo-livre">O meu tempo livre</a>
+            </div>
+        </div>
+    </div>
+
+    <h1>O Meu Portfólio Digital</h1>
+    <p>Bem-vindo ao meu espaço online construído do zero.</p>
+
+    <div class="caixa-especial" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Quem Eu Sou</h2>
+                <p>Aqui podes contar a tua história. Esta caixa tem uma imagem de fundo espacial (via código) e as bordas brancas que pediste.</p>
+                <p>O contraste entre o fundo escuro e o texto branco facilita muito a leitura e dá um aspeto profissional.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/mini mad.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+<footer id="meu-rodape">
+        </footer>
+
+        <script>
+        
+        const rodape = document.getElementById('meu-rodape');
+
+       
+        const botao = document.createElement('button');
+
+       
+        botao.innerHTML = "botão secreto";
+        
+        
+        botao.className = "botao-js";
+
+        
+        botao.onclick = function() {
+           
+            const novaJanela = window.open("", "_blank");
+           
+            novaJanela.document.write(`
+                <body style="background: black; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial;">
+                    <h1>este botão é executado em javascript</h1>
+                </body>
+            `);
+        };
+
+    
+        rodape.appendChild(botao);
+    </script>
+</body>
+</html>

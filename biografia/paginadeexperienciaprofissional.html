@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha jornada de trabalhos</title>
+    <style>
+       
+        
+        body {
+            background-color: black; 
+            color: white;           
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6; 
+        }
+
+       
+        h1 {
+            color: #f0f0f0; 
+            text-align: center;
+        }
+
+        
+        .conteudo {
+            max-width: 800px;
+            margin: 0 auto; 
+        }
+    </style>
+    <style>
+       
+        body {
+            background-color: #121212; 
+            color: #E0E0E0;           
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+       
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+       
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555; 
+        }
+
+        
+        .dropdown-content {
+            display: none; 
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        
+        .dropdown-content a {
+            float: none;
+            color: black; 
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+       
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+        .conteudo {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .caixa-castro-daire {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/imagem\ de\ castro\ daire\ noturno.jpeg.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+                
+        .caixa-arouca {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/arouca\ de\ costas\ \(2\).jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+ .caixa-nespereira {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/nespereira\ montanhas.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+.caixa-gincana-de-souto {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/mini\ mad.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+.caixa-verao-2025 {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/random\ incendio.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+.caixa-exame-bombeiro {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/turma.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+
+
+
+
+
+.caixa-viagem-medieval {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/viagem\ medieval\ em\ 2024.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+
+        .caixa-curso-abre-carros {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+            
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/curso\ de\ desencarceramento.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+ footer {
+            background-color: #000;
+            border-top: 1px solid #444;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        
+        .botao-js {
+            background-color: #131313; 
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .botao-js:hover {
+            transform: scale(1.05);
+            background-color: #ffea00;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="conteudo">
+        <h1>O meu trabalho</h1>
+       
+    </div>
+
+
+    <div class="navbar">
+        <a href="paginaprincipal.html">Início</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Sobre Mim 
+                <i class="fa fa-caret-down"></i> &#9662; </button>
+            <div class="dropdown-content">
+                <a href="paginaprincipal.html">Quem eu sou</a>
+                <a href="paginadeexperienciaprofissional.html">O que fiz</a>
+                <a href="paginadehobbies.html">O meu tempo livre</a>
+                <a href="associados.html">Associados</a>
+            </div>
+        </div> 
+    </div>
+
+
+    <h1>2025</h1>
+   
+    <div class="caixa-castro-daire" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Campanha de Castro Daire</h2>
+                <p>No verão de 2025, em setembro Castro Daire</p>
+                <p>Castro Daire viu uma campanha sem descanso de 7 dias, muitos deles sem logistica, noites vermelhos pela luz dos incendios e dias cinzentos por causa do fumo nos céus</p>
+                <p>Castro Daire foi um teste de corpo, mente e resiliencia, enfrentando dificuldades e ultrapassando-as com o trabalho em equipa</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/imagem de bombeiro em castro daire noturno.jpeg.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+        <div class="caixa-arouca" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Campanha de Arouca</h2>
+                <p>Arouca viu 5 dias de campanha em Julho, tanto de dia como de noite, cheias de combate a incêndios intensos, resgates animais e busca de pessoas</p>
+                <p>Dias longos e noites curtas, muitas das vezes sem dormir.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/arouca de costas.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+<div class="caixa-nespereira" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Missão de Nespereira</h2>
+                <p>1 semana antes da campanha de Arouca</p>
+                <p>Na missão de Nespereira foi necessário intervenção e rescaldo das áreas montanhosas afetadas pelos incêndios.</p>
+                <p>Nespereira mostrou ser uma missão dificil pois foi necessário averiguar zonas de dificil acesso e áreas que não tinham caminho pelo meio das montanhas, estando muitos pés em altitude e a mobilização de 2 equipas compostas por 4 elementos cada por 3 kilometros de terreno montanhoso e traiçoeiro devido á instabilidade do chão.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/nespereira.png" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+ <div class="caixa-gincana-de-souto" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Prevenção da gincana de souto</h2>
+                <p>Em junho houve eventos de carros</p>
+                <p>Um desses eventos foi a gincana de souto, onde o objetivo era em assistir a população geralmente e em caso de acidente assistir e socorrer feridos e apagar incêndios caso algum dos competidores tivesse um acidente.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/gincana de arouca.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+<div class="caixa-verao-2025" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Verão 2025</h2>
+                <p>Claro que em 2025 não foi só uma mão cheia de incêndios aqui ou ali</p>
+                <p>O meu trabalho de verão em 2025 encorporou as campanhas descritas em cima mas também encorporou outros trabalhos para além das campanhas.</p>
+                <p>Desde junho de 2025 até setembro foi dentro e fora de camiões e de corridas até á missão.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/primeiro rescaldo.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+<h1>2024</h1>
+
+<p>2024 foi um ano que tive mais parado mas que no entanto usei também para obter experiência de trabalho</p>
+
+
+        <div class="caixa-exame-bombeiro" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Exame final</h2>
+                <p>Em dezembro de 2024 foi o mês em que ficaria a saber se o treino e os estudos de 1 ano e 3 meses compensou.</p>
+                <p>No entanto apenas em janeiro de 2025 aconteceu a cerimónia de promoção onde todos os elementos da turma incluindo eu fomos promovidos acima de estagiários.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/diadeexame.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<div class="caixa-viagem-medieval" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Representação na Viagem Medieval 2024</h2>
+                <p>Em 2024 decidi reinscrever me para ir trabalhar na Viagem Medieval, no entanto em vez de ser um voluntário decidi inscrever-me para representar no espetáculo noturno da viagem medieval, geralmente conhecido como "O Grande Formato"</p>
+                <p>Nesse ano tive treino de esgrima e atuação ainda por cima com a companhia de dois amigos meus.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/viagem medieval em 2024.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+<div class="caixa-curso-abre-carros" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Desencarceramento</h2>
+                <p>Por volta de março de 2024, tirei o curso de desencarceramento, um curso necessário para o currículo de bombeiro.</p>
+                <p>Durante o curso aprendi a gerir uma equipa em situações delicadas no entanto stressantes, aprendi a controlar os nervos e trabalhei com máquinas que se bem trabalhadas cortavam um carro a meio.</p>
+                <p>Neste curso deu para aprender sobre destacar elementos de uma equipa para funções nas quais são bons e para treinar e ajudar esses elementos a expandir as suas abilidades em treinos.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/carro aberto.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="meu-rodape">
+        </footer>
+
+        <script>
+        
+        const rodape = document.getElementById('meu-rodape');
+
+       
+        const botao = document.createElement('button');
+
+       
+        botao.innerHTML = "botão secreto";
+        
+        
+        botao.className = "botao-js";
+
+        
+        botao.onclick = function() {
+           
+            const novaJanela = window.open("", "_blank");
+           
+            novaJanela.document.write(`
+                <body style="background: black; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial;">
+                    <h1>este botão é executado em javascript</h1>
+                </body>
+            `);
+        };
+
+        
+        rodape.appendChild(botao);
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meu perfil</title>
+    <style>
+    
+        
+        body {
+            background-color: black; 
+            color: white;           
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6; 
+        }
+
+        h1 {
+            color: #f0f0f0; 
+            text-align: center; 
+        }
+
+        .conteudo {
+            max-width: 800px;
+            margin: 0 auto; 
+        }
+    </style>
+    <style>
+
+        body {
+            background-color: #121212; 
+            color: #E0E0E0;           
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            background-color: #333; 
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+      
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+  
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+
+
+        .dropdown-content {
+            display: none; 
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+       
+        .dropdown-content a {
+            float: none;
+            color: black; 
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        .conteudo {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        footer {
+            background-color: #000;
+            border-top: 1px solid #444;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+
+        .botao-js {
+            background-color: #131313; 
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .botao-js:hover {
+            transform: scale(1.05);
+            background-color: #ffea00;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="conteudo">
+        <h1>Bem-vindo ao meu Site</h1>
+       
+    </div>
+
+
+    <div class="navbar">
+        <a href="paginaprincipal.html">Início</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Sobre Mim 
+                <i class="fa fa-caret-down"></i> &#9662; </button>
+            <div class="dropdown-content">
+                <a href="paginaprincipal.html">Quem eu sou</a>
+                <a href="paginadeexperienciaprofissional.html">O que fiz</a>
+                <a href="paginadehobbies.html">O meu tempo livre</a>
+                 <a href="associados.html">Associados</a>
+            </div>
+        </div> 
+    </div>
+ <p>Parece um resumo, meio que é.</p>
+        <p>Bem vindos ao meu site, sou o Rafael Teixeira, tenho 21 anos, sou natural de Santa Maria da feira e aqui têm a minha vida exposta.</p>
+
+<p>Este site foi feito com o intuito académico como um teste e demonstração que aprendi a programar em html, css e javascript, maior parte deste site foi escrito em css</p>
+<p>A navegação entre páginas é feita atraves da seleção da página na aba Sobre Mim, também reconhecida como About Me.</p>
+
+<p>A única forma de me contactar é através do meu email: rafael.b.s.s.teixeira@gmail.com</p>
+
+<footer id="meu-rodape">
+        </footer>
+
+        <script>
+        
+        const rodape = document.getElementById('meu-rodape');
+
+       
+        const botao = document.createElement('button');
+
+       
+        botao.innerHTML = "botão secreto";
+        
+        
+        botao.className = "botao-js";
+
+        
+        botao.onclick = function() {
+           
+            const novaJanela = window.open("", "_blank");
+           
+            novaJanela.document.write(`
+                <body style="background: black; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial;">
+                    <h1>este botão é executado em javascript</h1>
+                </body>
+            `);
+        };
+
+        
+        rodape.appendChild(botao);
+    </script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Os meus associados</title>
+    <style>
+
+        
+        body {
+            background-color: black; 
+            color: white;            
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6; 
+        }
+
+        
+        h1 {
+            color: #f0f0f0; 
+            text-align: center; 
+        }
+
+       
+        .conteudo {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+    <style>
+      
+        body {
+            background-color: #121212; 
+            color: #E0E0E0;           
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            background-color: #333; 
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+       
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555; 
+        }
+
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        
+        .dropdown-content a {
+            float: none;
+            color: black; 
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
+        .conteudo {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+
+        .Sandra {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+           
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/menina\ estas\ á\ janela.jpeg);
+                              
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+    
+        .Marlene {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/marlene\ 2.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+    
+        .Maeefamilia{
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/marlene\ 2.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+    
+    
+        .Ana {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/abracoamadrinha.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+    
+    
+    
+        .Carlos {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/CarlosGomes.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+    
+
+
+
+        .turma {
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/turma.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+         footer {
+            background-color: #000;
+            border-top: 1px solid #444;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+      
+        .botao-js {
+            background-color: #131313; 
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .botao-js:hover {
+            transform: scale(1.05);
+            background-color: #ffea00;
+        }
+
+        .Mulher{
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/a\ minha\ mulher.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .Alice{
+            max-width: 900px;
+            margin: 50px auto;
+            border: 2px solid white; 
+            border-radius: 20px;
+            overflow: hidden;
+            
+
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url(imagens/demonio.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+
+        .texto-lado {
+            flex: 2;
+            text-align: left; 
+        }
+
+        .imagem-lado {
+            flex: 1;
+        }
+
+        .imagem-lado img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+        <div class="navbar">
+        <a href="paginaprincipal.html">Início</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Sobre Mim 
+                <i class="fa fa-caret-down"></i> &#9662; </button>
+            <div class="dropdown-content">
+                <a href="paginaprincipal.html">Quem eu sou</a>
+                <a href="paginadeexperienciaprofissional.html">O que fiz</a>
+                <a href="paginadehobbies.html">O meu tempo livre</a>
+                <a href="associados.html">Associados</a>
+            </div>
+        </div> 
+    </div>
+
+<h2>Os meus amigos e importantes</h2>
+<p>Dedico esta página a todos que me ajudaram a crescer e que me ajudaram a ultrapassar dificuldades</p>
+
+<div class="Marlene" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Marlene</h2>
+                <p>Aqui apresento uma das mulheres mais fortes que conheço, a Marlene, uma mulher que ajudou me em tempos dificeis tanto nos bombeiros como fora com conselhos e chamadas á atenção.</p>
+                <p>Uma pessoa na qual gostaria de poder agradecer mais sem saber como, guardarei sempre as nossas conversas e os treinos de pré-hospitalar.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/marlene.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+
+<div class="Sandra" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Sandra</h2>
+                <p>A Sandra é uma pessoa querida para mim, uma pessoa que ajudou-me e muitas das vezes puxou me para não fazer algo irracional, aconselhou-me a fazer escolhas que ajudaram me a crescer e a melhorar como pessoa.</p>
+                <p>Uma pessoa que põe qualquer um de bom humor com a sua personalidade e uma pessoa que se preocupa com as outras, muitas das vezes que trabalho ela está na central e andamos como ela diz "Toda a noite"</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/sandrinha.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+
+<div class="turma" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>A minha turma</h2>
+                <p>Esta turma, so tenho que agradecer-lhes por tudo que fizemos e tudo que ainda temos que fazer.</p>
+                <p>Foram pessoas que no inicio não confiava muito mas depois que toda a gente se conheceu melhor não poderia pedir por outras pessoas para chamar de colegas de turma.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/diadeexame.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+
+<div class="Carlos" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>O meu instrutor</h2>
+                <p>Carlos Gomes é um homem que ensinou-me a ser bombeiro, teve a ensinar a mim e á minha turma as retas e as curvas do progresso para ser um bombeiro pronto durante 2 anos.</p>
+                <p>A ele agradeço por muitas das vezes puxar por mim quando pensei em desistir e ajudar me quando tinha dificuldades.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/CarlosGomes.png" alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+<div class="Alice" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>A minha irmã</h2>
+                <p>Tenho nada de bom para dizer a cerca desta individua</p>
+                <P>Mentira, claro que tenho, mas é dificil de descrever a relação que tenho com a minha irmã pois como qualquer outra estamos sempre a chatear um ao outro</P>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/demonio no gelo.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+
+<div class="Ana" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>A minha madrinha</h2>
+                <p>Ana, a minha madrinha de promoção, escolhida a dedo por ser a pessoa que mais presente estava enquanto eu era estagiário.</p>
+                <p>Agradeço te por ajudares me e avisares me de quem era boa pessoa e de quem não era boa influência</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/abracoamadrinha.jpeg " alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+
+
+<div class="Mulher" id="quem-sou">
+        <div class="flex-container">
+            
+            <div class="texto-lado">
+                <h2>Mariana</h2>
+                <p>Dedico este bloco mas devia escrever mais, falo aqui sobre a minha mulher a pessoa que a mim merece o meu coração e muito mais.</p>
+                <p>Tenho o prazer de poder falar contigo todos os dias, tenho o orgulho de poder chamar-te minha.</p>
+            </div>
+
+            <div class="imagem-lado">
+                <img src="imagens/a minha mulher.jpeg" alt="Foto de Perfil">
+            </div>
+
+        </div>
+</div>
+
+
+
+
+    <footer id="meu-rodape">
+        </footer>
+
+        <script>
+        
+        const rodape = document.getElementById('meu-rodape');
+
+       
+        const botao = document.createElement('button');
+
+       
+        botao.innerHTML = "botão secreto";
+        
+        
+        botao.className = "botao-js";
+
+        
+        botao.onclick = function() {
+           
+            const novaJanela = window.open("", "_blank");
+           
+            novaJanela.document.write(`
+                <body style="background: black; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial;">
+                    <h1>este botão é executado em javascript</h1>
+                </body>
+            `);
+        };
+
+       
+        rodape.appendChild(botao);
+        </script>
+</body>
+</html>
